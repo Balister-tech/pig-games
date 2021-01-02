@@ -32,6 +32,7 @@ const init = function () {
   player1El.classList.remove('player--winner');
   player0El.classList.add('player--active');
   player1El.classList.remove('player--active');
+  newFeature();
 };
 init();
 
@@ -96,4 +97,6 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
-console.log('Welcome to this game');
+const newFeature = function () {
+  console.log('Welcome to the application');
+};
